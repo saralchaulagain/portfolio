@@ -15,7 +15,7 @@ const Nav = () => {
     document.documentElement.classList.toggle("dark", dark);
   }, [dark]);
   return (
-    <Box className="flex justify-between items-center border-b-gray-1">
+    <Box className="flex justify-between items-center border-b-[0.5px] py-2">
       <Typography className="cursor-pointer" variant="h5">
         Portfolio
       </Typography>

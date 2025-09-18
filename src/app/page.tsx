@@ -1,7 +1,12 @@
+import About from "@/sections/About";
 import React from "react";
 
 const page = () => {
-  return <div>This is landing page.</div>;
+  return (
+    <div>
+      <About />
+    </div>
+  );
 };
 
 export default page;
