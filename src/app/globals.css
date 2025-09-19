@@ -1,14 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap");
 @import "tailwindcss";
+
 :root {
   --bg-color: #ffffff;
-  --text-color: #000000;
+  --text-color: #717182;
+  --header-text: #000000;
+  --line-color: #ececf0;
 }
 
 .dark {
   --bg-color: oklch(0.145 0 0);
   --text-color: #ffffff;
+  --header-text: #ffffff;
 }
 body {
   background: var(--bg-color);
   color: var(--text-color);
+}
+
+.line {
+  border-bottom: 1px solid var(--line-color);
+}
+
+.headers {
+  color: var(--header-text);
 }
