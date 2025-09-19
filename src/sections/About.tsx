@@ -1,77 +1,59 @@
-import { Box, Button, Typography } from "@mui/material";
-import Image from "next/image";
+"use client";
+import { Box, Typography } from "@mui/material";
 import React from "react";
-import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const About = () => {
   return (
-    <Box className="h-screen w-full flex justify-center items-center gap-3">
-      <Box className="w-2/5 ">
-        <Typography className="headers" variant="subtitle1">
-          Hello, I&#39;m
-        </Typography>
-        <Box className="flex flex-col mt-6 gap-1">
-          <Typography
-            className="headers"
-            sx={{ fontFamily: "'Ms Madi', cursive" }}
-            variant="h3"
-          >
-            Saral Chaulagain
+    <Box className="h-screen w-full flex justify-center items-center gap-3 pt-2 bg-[#ececf0]">
+      <Box className="w-2/3">
+        <Box className="w-full flex flex-col items-center justify-center">
+          <Typography className="headers " variant="h4">
+            About me
           </Typography>
-          <Typography sx={{ fontFamily: "'Ms Madi', cursive" }} variant="h5">
-            Full Stack Developer & UI/UX Designer
-          </Typography>
+          <Box className="flex flex-col gap-2 mt-6">
+            <Typography variant="body1">
+              A passionate and motivated front-end developer intern, freshly
+              equipped with modern web development skills and a hunger to
+              contribute to real-world projects. I thrive on transforming
+              creative ideas into clean, functional, and user-friendly
+              interfaces.
+            </Typography>
+            <Typography variant="body1">
+              I am actively seeking an internship opportunity where I can apply
+              my knowledge, learn from experienced developers, and help build
+              impactful digital experiences.
+            </Typography>
+          </Box>
         </Box>
-        <Box className="mt-6">
-          <Typography variant="body1">
-            I create exceptional digital experiences through thoughtful design
-            and clean code. Passionate about turning ideas into beautiful,
-            functional applications.
-          </Typography>
+        <Box className="grid grid-cols-3 mt-6 gap-2">
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+            <Typography variant="subtitle1" className="headers text-center ">
+              Clean Code
+            </Typography>
+            <Typography className="text-justify" variant="body1">
+              Writing readable and maintainable code using modern HTML, CSS, and
+              JavaScript (ES6+).
+            </Typography>
+          </Box>
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+            <Typography variant="subtitle1" className="headers text-center ">
+              UI/UX Implementation
+            </Typography>
+            <Typography className="text-justify" variant="body1">
+              Bringing designs to life with a strong attention to detail,
+              focusing on creating intuitive and accessible user interfaces.
+            </Typography>
+          </Box>
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+            <Typography variant="subtitle1" className="headers text-center ">
+              Responsive Design
+            </Typography>
+            <Typography className="text-justify" variant="body1">
+              Building websites that provide a seamless experience across all
+              devices, from desktop to mobile.
+            </Typography>
+          </Box>
         </Box>
-        <Box className="flex gap-2 mt-6">
-          <Button variant="contained">View my work</Button>
-          <Button variant="outlined">Download CV</Button>
-        </Box>
-        <Box className="flex gap-1.5 text-xl mt-6">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/saral.chaulagain12/?hl=en"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/saral.chaulagain.56/"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://github.com/saralchaulagain"
-          >
-            <FaGithub />
-          </a>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/saral-chaulagain-897986237/"
-          >
-            <FaLinkedin />
-          </a>
-        </Box>
-      </Box>
-      <Box>
-        <Image
-          src="/profile.jpg"
-          alt="Profile Picture"
-          width={400}
-          height={300}
-          className="rounded-full"
-        />
       </Box>
     </Box>
   );

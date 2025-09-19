@@ -26,7 +26,9 @@ const Nav = () => {
       <ul className="flex gap-6">
         {lists.map((list, index) => (
           <li key={index}>
-            <a href="#">{list}</a>
+            <a href="#" className="text-hover">
+              {list}
+            </a>
           </li>
         ))}
       </ul>
