@@ -4,7 +4,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <Box className="h-screen w-full flex justify-center items-center gap-3 pt-2 bg-[#ececf0]">
+    <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-about">
       <Box className="w-2/3">
         <Box className="w-full flex flex-col items-center justify-center">
           <Typography className="headers " variant="h4">
@@ -25,9 +25,9 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
-        <Box className="grid grid-cols-3 mt-6 gap-2">
+        <Box className="grid grid-cols-3 mt-6 gap-2 card-text">
           <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
-            <Typography variant="subtitle1" className="headers text-center ">
+            <Typography variant="subtitle1" className=" text-center ">
               Clean Code
             </Typography>
             <Typography className="text-justify" variant="body1">
@@ -36,7 +36,7 @@ const About = () => {
             </Typography>
           </Box>
           <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
-            <Typography variant="subtitle1" className="headers text-center ">
+            <Typography variant="subtitle1" className=" text-center ">
               UI/UX Implementation
             </Typography>
             <Typography className="text-justify" variant="body1">
@@ -45,7 +45,7 @@ const About = () => {
             </Typography>
           </Box>
           <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
-            <Typography variant="subtitle1" className="headers text-center ">
+            <Typography variant="subtitle1" className=" text-center ">
               Responsive Design
             </Typography>
             <Typography className="text-justify" variant="body1">
