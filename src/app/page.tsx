@@ -1,5 +1,6 @@
 import About from "@/sections/About";
 import Home from "@/sections/Home";
+import Skill from "@/sections/Skill";
 import React from "react";
 
 const page = () => {
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <Home />
       <About />
+      <Skill />
     </div>
   );
 };

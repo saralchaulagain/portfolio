@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { FaInstagram, FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
 
-const About = () => {
+const Home = () => {
   return (
     <Box className="h-screen w-full flex justify-center items-center gap-3 pt-2">
       <Box className="w-2/5 ">
@@ -20,7 +20,7 @@ const About = () => {
             Saral Chaulagain
           </Typography>
           <Typography sx={{ fontFamily: "'Ms Madi', cursive" }} variant="h5">
-            Front-End Developer & UI/UX Designer
+            Front-End Developer
           </Typography>
         </Box>
         <Box className="mt-6">
@@ -82,4 +82,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Home;
