@@ -136,7 +136,7 @@ const Skill = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="w-full flex flex-col items-center justify-center mt-6 card-text">
+        <Box className="w-full flex flex-col items-center justify-center mt-6 card-text gap-6">
           <Typography className="headers " variant="h5">
             Current Focus
           </Typography>
@@ -147,7 +147,7 @@ const Skill = () => {
             validation and performance.
           </Typography>
 
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover w-1/2">
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover w-1/2 ">
             <Box className="grid grid-cols-1 gap-4 px-2">
               <Typography variant="subtitle1" className=" text-justify ">
                 Learning

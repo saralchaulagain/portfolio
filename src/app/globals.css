@@ -4,17 +4,21 @@
 :root {
   --bg-color: #ffffff;
   --text-color: #717182;
+  --experience-card-text-color: #717182;
   --header-text: #000000;
   --line-color: #ececf0;
   --about-bg: #ececf0;
+  --learning-card-bg: #ffffff;
   /* --card-text: #717182; */
 }
 
 .dark {
   --bg-color: oklch(0.145 0 0);
+  --learning-card-bg: oklch(0.145 0 0);
   --about-bg: oklch(30.726% 0.00286 16.641);
   --card-text: #000000;
   --text-color: #ffffff;
+  --experience-card-text-color: #000000;
   --header-text: #ffffff;
 }
 body {
@@ -45,4 +49,7 @@ body {
 }
 .bg-about {
   background: var(--about-bg);
+}
+.experience-card {
+  color: var(--experience-card-text-color);
 }
