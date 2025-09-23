@@ -52,4 +52,5 @@ body {
 }
 .experience-card {
   color: var(--experience-card-text-color);
+  color: var(--experience-card-text-color);
 }
