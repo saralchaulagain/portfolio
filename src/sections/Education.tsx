@@ -5,7 +5,7 @@ import React from "react";
 
 const Skill = () => {
   return (
-    <Box className=" h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent">
+    <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent">
       <Box className="w-2/3">
         <Box className="w-full flex flex-col items-center justify-center">
           <Typography className="headers " variant="h4">
@@ -140,10 +140,7 @@ const Skill = () => {
           <Typography className="headers " variant="h5">
             Current Focus
           </Typography>
-          <Typography
-            variant="subtitle1"
-            className="text-justify text-[var(--text-color)]"
-          >
+          <Typography variant="subtitle1" className=" text-justify ">
             I am currently learning GSAP for creating smooth and engaging
             animations, React Table for building efficient and dynamic data
             tables, and React Hook Form for handling forms with better

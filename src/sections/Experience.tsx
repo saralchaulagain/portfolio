@@ -6,7 +6,7 @@ const Experience = () => {
     <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent bg-about">
       <Box className="w-2/3">
         <Box>
-          <Typography className="headers " variant="h4">
+          <Typography className="headers text-center" variant="h4">
             My Experience
           </Typography>
         </Box>
