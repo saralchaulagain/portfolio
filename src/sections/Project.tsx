@@ -1,24 +1,16 @@
-"use client";
 import { Box, Typography } from "@mui/material";
 import React from "react";
 
-const Education = () => {
+const Project = () => {
   return (
-    <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent">
+    <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent bg-about">
       <Box className="w-2/3">
-        <Box className="w-full flex flex-col items-center justify-center">
-          <Typography className="headers " variant="h4">
-            Education
+        <Box>
+          <Typography className="headers text-center" variant="h4">
+            My Projects
           </Typography>
-          <Box className="flex  mt-6">
-            <Typography variant="body1">
-              Built a strong foundation in technology and problem-solving
-              through academic learning, while gaining skills in teamwork,
-              adaptability, and continuous growth.
-            </Typography>
-          </Box>
         </Box>
-        <Box className="grid grid-cols-1 mt-6 gap-4 card-text">
+        <Box className="grid grid-cols-2 gap-2 mt-6 experience-card">
           <Box className="border bg-[#ffffff] py-1 px-2 h-40 flex  gap-4 rounded-2xl card-hover">
             <img src="/aryan.png" alt="html icon" />
             <Box className="flex flex-col">
@@ -66,4 +58,4 @@ const Education = () => {
   );
 };
 
-export default Education;
+export default Project;
