@@ -12,9 +12,9 @@ const page = () => {
       <Home />
       <About />
       <Skill />
-      <Experience />
-      <Education />
       <Project />
+      <Education />
+      <Experience />
     </div>
   );
 };

@@ -11,44 +11,34 @@ const Project = () => {
           </Typography>
         </Box>
         <Box className="grid grid-cols-2 gap-2 mt-6 experience-card">
-          <Box className="border bg-[#ffffff] py-1 px-2 h-40 flex  gap-4 rounded-2xl card-hover">
-            <img src="/aryan.png" alt="html icon" />
+          <Box className="border bg-[#ffffff] py-1 px-2 h-45 flex  gap-4 rounded-2xl card-hover">
+            <img src="/cloudy.png" alt="weather icon" />
             <Box className="flex flex-col">
               <Typography variant="subtitle1" className=" text-center ">
-                Bachelor of Information Technology (BIT)
+                Weather App
               </Typography>
               <Box className="flex flex-col gap-2 mt-6">
-                <Box className="grid grid-cols-1 gap-4 ">
-                  <Typography variant="body1">
-                    Aryan School of Engineering and Management, Kathmandu
-                    (Affiliated to Tribhuvan University)
-                  </Typography>
-                </Box>
-                <Box className="flex ">
-                  <Typography variant="subtitle1" className="font-bold">
-                    2021 &mdash; present
-                  </Typography>
-                </Box>
+                <Typography variant="body1">
+                  A simple and responsive weather application built using HTML,
+                  CSS, and JavaScript. It fetches real-time weather data from a
+                  public API and displays temperature, humidity, and weather
+                  conditions of any city entered by the user.
+                </Typography>
               </Box>
             </Box>
           </Box>
-          <Box className="border bg-[#ffffff] py-1 px-2 h-40 flex  gap-4 rounded-2xl card-hover">
-            <img src="/himalaya.png" alt="html icon" />
-            <Box className="w-full flex flex-col ">
+          <Box className="border bg-[#ffffff] py-1 px-2 h-45 flex  gap-4 rounded-2xl card-hover">
+            <img src="/time-management.png" alt="weather icon" />
+            <Box className="flex flex-col">
               <Typography variant="subtitle1" className=" text-center ">
-                High School (+2 Science)
+                Event Management System (Internship Project)
               </Typography>
               <Box className="flex flex-col gap-2 mt-6">
-                <Box className="grid grid-cols-1 gap-4 ">
-                  <Typography variant="body1">
-                    Himalaya College, Koteshwor
-                  </Typography>
-                </Box>
-                <Box className="flex ">
-                  <Typography variant="subtitle1" className="font-bold">
-                    2019 &mdash; 2021
-                  </Typography>
-                </Box>
+                <Typography variant="body1">
+                  Currently working as a Frontend Developer Intern,
+                  collaborating with a company team to build a responsive event
+                  management web application using React and Tailwind CSS.
+                </Typography>
               </Box>
             </Box>
           </Box>
