@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box className="my-6 ml-4">
+    <Box className="my-6 ml-4 cursor-pointer">
       © 2025 Saral Chaulagain. All rights reserved.
     </Box>
   );

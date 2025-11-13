@@ -5,6 +5,7 @@ import Home from "@/sections/Home";
 import Skill from "@/sections/Skill";
 import React from "react";
 import Project from "@/sections/Project";
+import Contact from "@/sections/Contact";
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Project />
       <Education />
       <Experience />
+      <Contact />
     </div>
   );
 };
