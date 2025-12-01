@@ -20,6 +20,7 @@
   --text-color: #ffffff;
   --experience-card-text-color: #000000;
   --header-text: #ffffff;
+  --form-color: #cce6ff;
 }
 body {
   background: var(--bg-color);
@@ -53,4 +54,7 @@ body {
 .experience-card {
   color: var(--experience-card-text-color);
   color: var(--experience-card-text-color);
+}
+.form-color {
+  color: var();
 }

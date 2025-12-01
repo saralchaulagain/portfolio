@@ -19,7 +19,7 @@ const Contact = () => {
       .then(() => {
         setStatus("sent");
       })
-      .then(() => {
+      .catch(() => {
         setStatus("error");
       });
   };
@@ -37,7 +37,7 @@ const Contact = () => {
         </Box>
 
         {/* Contact Section */}
-        <Box className="flex  gap-8 items-stretch bg-[#ffffff] px-2 py-1">
+        <Box className="flex flex-1 gap-8 items-stretch bg-[#ffffff] px-2 py-1">
           {/* Left side — contact info */}
           <Box className=" flex  flex-col justify-center gap-4 card-text flex-1">
             <Box className="border bg-bgLight py-3 px-4 flex items-center gap-4 rounded-2xl card-hover">
@@ -58,19 +58,19 @@ const Contact = () => {
             </Box>
           </Box>
           {/* Divider */}
-          <Box className="w-[2px] bg-divider self-stretch" />
+          <Box className="w-[0.5px] bg-black self-stretch" />
           {/* Form Section */}
-          <Box>
+          <Box className="px-2 py-1 w-1/2">
             <form
               ref={formRef}
               onSubmit={sendEmail}
-              className="flex flex-col gap-4"
+              className="flex flex-col gap-4 card-text"
             >
               <input
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="border p-2 rounded"
+                className="border p-2 rounded "
                 required
               />
               <input
