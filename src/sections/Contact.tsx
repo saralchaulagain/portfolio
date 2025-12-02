@@ -4,11 +4,15 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const formRef = useRef();
+  const formRef = useRef<HTMLFormElement | null>(null);
   const [status, setStatus] = useState("");
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    if (!formRef.current) {
+      setStatus("error");
+      return;
+    }
     emailjs
       .sendForm(
         "service_u29cajs",
