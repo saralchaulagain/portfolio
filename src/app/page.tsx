@@ -20,7 +20,7 @@ const Page = () => {
     contact: useRef(null),
   };
 
-  const scrollTo = (key) => {
+  const scrollTo = (key: string) => {
     refs[key].current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
