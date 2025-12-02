@@ -3,8 +3,17 @@
 import { Box, Button, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 
+type SectionKeys =
+  | "home"
+  | "about"
+  | "skill"
+  | "project"
+  | "education"
+  | "experience"
+  | "contact";
+
 type Props = {
-  scrollTo: (section: string) => void;
+  scrollTo: (section: SectionKeys) => void;
 };
 
 export default function Nav({ scrollTo }: Props) {

@@ -9,8 +9,16 @@ import Project from "@/sections/Project";
 import Contact from "@/sections/Contact";
 import Nav from "@/components/Nav";
 
+type SectionKeys =
+  | "home"
+  | "about"
+  | "education"
+  | "experience"
+  | "project"
+  | "skill"
+  | "contact";
 const Page = () => {
-  const refs = {
+  const refs: Record<SectionKeys, React.RefObject<HTMLDivElement>> = {
     home: useRef(null),
     about: useRef(null),
     education: useRef(null),
@@ -20,7 +28,7 @@ const Page = () => {
     contact: useRef(null),
   };
 
-  const scrollTo = (key: string) => {
+  const scrollTo = (key: SectionKeys) => {
     refs[key].current?.scrollIntoView({ behavior: "smooth" });
   };
   return (
