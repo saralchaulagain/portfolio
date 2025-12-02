@@ -38,6 +38,9 @@ body {
 .text-hover:hover {
   color: #474646;
 }
+.nav-text-hover:hover {
+  color: #cfcccc;
+}
 .card-text {
   color: var(--card-text);
 }
