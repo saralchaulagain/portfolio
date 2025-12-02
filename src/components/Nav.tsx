@@ -15,7 +15,6 @@ export default function Nav({ scrollTo }: Props) {
     "Project",
     "Education",
     "Experience",
-    "Contact",
   ];
 
   const [dark, setDark] = useState(false);

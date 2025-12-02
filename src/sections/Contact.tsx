@@ -24,7 +24,7 @@ const Contact = () => {
       });
   };
   return (
-    <Box className="about h-screen w-full flex justify-center items-center pt-2 bg-transparent">
+    <Box className="about h-screen w-full flex justify-center items-center pt-2 bg-transparent ">
       <Box className="w-2/3">
         {/* Title */}
         <Box className="w-full flex flex-col items-center justify-center mb-8">
@@ -37,7 +37,7 @@ const Contact = () => {
         </Box>
 
         {/* Contact Section */}
-        <Box className="flex flex-1 gap-8 items-stretch bg-[#ffffff] px-2 py-1">
+        <Box className="flex flex-1 gap-8 items-stretch bg-[#ffffff] px-2 py-1 rounded-md ">
           {/* Left side — contact info */}
           <Box className=" flex  flex-col justify-center gap-4 card-text flex-1">
             <Box className="border bg-bgLight py-3 px-4 flex items-center gap-4 rounded-2xl card-hover">

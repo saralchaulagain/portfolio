@@ -24,12 +24,17 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const scrollTo = (section: string) => {
+    const el = document.getElementById(section.toLowerCase());
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased mt-1`}
       >
-        <Nav />
         {children}
         <Footer />
       </body>
