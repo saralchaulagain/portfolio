@@ -17,13 +17,13 @@ type Props = {
 };
 
 export default function Nav({ scrollTo }: Props) {
-  const lists = [
-    "Home",
-    "About",
-    "Skill",
-    "Project",
-    "Education",
-    "Experience",
+  const lists: SectionKeys[] = [
+    "home",
+    "about",
+    "skill",
+    "project",
+    "education",
+    "experience",
   ];
 
   const [dark, setDark] = useState(false);
@@ -54,10 +54,10 @@ export default function Nav({ scrollTo }: Props) {
         {lists.map((list, idx) => (
           <li key={idx}>
             <button
-              onClick={() => scrollTo(list.toLowerCase())}
+              onClick={() => scrollTo(list.toLowerCase() as SectionKeys)}
               className="nav-text-hover outline-none bg-transparent border-none cursor-pointer"
             >
-              {list}
+              {list.charAt(0).toUpperCase() + list.slice(1)}
             </button>
           </li>
         ))}
