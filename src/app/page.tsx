@@ -18,14 +18,14 @@ type SectionKeys =
   | "skill"
   | "contact";
 const Page = () => {
-  const refs: Record<SectionKeys, React.RefObject<HTMLDivElement>> = {
-    home: useRef(null),
-    about: useRef(null),
-    education: useRef(null),
-    experience: useRef(null),
-    project: useRef(null),
-    skill: useRef(null),
-    contact: useRef(null),
+  const refs: Record<SectionKeys, React.RefObject<HTMLDivElement | null>> = {
+    home: useRef<HTMLDivElement>(null),
+    about: useRef<HTMLDivElement>(null),
+    education: useRef<HTMLDivElement>(null),
+    experience: useRef<HTMLDivElement>(null),
+    project: useRef<HTMLDivElement>(null),
+    skill: useRef<HTMLDivElement>(null),
+    contact: useRef<HTMLDivElement>(null),
   };
 
   const scrollTo = (key: SectionKeys) => {
