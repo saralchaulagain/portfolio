@@ -25,6 +25,7 @@
 body {
   background: var(--bg-color);
   color: var(--text-color);
+  /* width: 100%;  */
 }
 
 .line {
@@ -59,5 +60,11 @@ body {
   color: var(--experience-card-text-color);
 }
 .form-color {
-  color: var();
+  color: var(--form-color, currentColor);
+}
+@media (max-width: 48rem) {
+  html {
+    width: min-content;
+    margin-left: 7rem;
+  }
 }

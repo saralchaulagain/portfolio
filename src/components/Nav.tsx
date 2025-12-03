@@ -38,7 +38,7 @@ export default function Nav({ scrollTo }: Props) {
   }, [dark]);
 
   return (
-    <Box className="w-full fixed top-0 right-0 left-0 flex justify-between items-center line px-2 py-3 bg-background/80 backdrop-blur-md z-50 shadow-sm">
+    <Box className="w-full fixed top-0 right-0 left-0 flex justify-between items-center line px-2 py-3 bg-background/80 backdrop-blur-md z-50 shadow-sm max-md:flex-col max-md:w-25 max-md:h-full">
       {/* Logo */}
       <Typography
         variant="h5"
@@ -50,7 +50,7 @@ export default function Nav({ scrollTo }: Props) {
       </Typography>
 
       {/* Nav Links */}
-      <ul className="flex gap-6">
+      <ul className="flex gap-6 max-md:flex-col">
         {lists.map((list, idx) => (
           <li key={idx}>
             <button
@@ -64,7 +64,7 @@ export default function Nav({ scrollTo }: Props) {
       </ul>
 
       {/* Buttons */}
-      <Box className="flex gap-2">
+      <Box className="flex gap-2 max-md:flex-col">
         <Button
           variant="outlined"
           color="secondary"

@@ -4,7 +4,7 @@ import React from "react";
 const Experience = () => {
   return (
     <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent bg-about">
-      <Box className="w-2/3">
+      <Box className="w-2/3 max-md:w-full">
         <Box>
           <Typography className="headers text-center" variant="h4">
             My Experience

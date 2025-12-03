@@ -29,7 +29,7 @@ const Contact = () => {
   };
   return (
     <Box className="about h-screen w-full flex justify-center items-center pt-2 bg-transparent ">
-      <Box className="w-2/3">
+      <Box className="w-2/3 max-md:w-full">
         {/* Title */}
         <Box className="w-full flex flex-col items-center justify-center mb-8">
           <Typography className="headers" variant="subtitle2">

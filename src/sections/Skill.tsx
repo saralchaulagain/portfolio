@@ -6,7 +6,7 @@ import React from "react";
 const Skill = () => {
   return (
     <Box className=" h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent">
-      <Box className="w-2/3">
+      <Box className="w-2/3 max-md:w-full">
         <Box className="w-full flex flex-col items-center justify-center">
           <Typography className="headers " variant="h4">
             Skills
