@@ -10,7 +10,7 @@ const About = () => {
           <Typography className="headers " variant="h4">
             About me
           </Typography>
-          <Box className="flex flex-col gap-2 mt-6">
+          <Box className="flex flex-col gap-2 mt-6 max-md:mt-1">
             <Typography variant="body1">
               A passionate and motivated front-end developer intern, freshly
               equipped with modern web development skills and a hunger to
@@ -25,8 +25,8 @@ const About = () => {
             </Typography>
           </Box>
         </Box>
-        <Box className="grid grid-cols-3 mt-6 gap-2 card-text">
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+        <Box className="grid grid-cols-3 mt-6 gap-2 card-text max-md:grid-cols-2 max-md:mt-1 ">
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1 ">
             <Typography variant="subtitle1" className=" text-center ">
               Clean Code
             </Typography>
@@ -35,22 +35,23 @@ const About = () => {
               JavaScript (ES6+).
             </Typography>
           </Box>
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
-            <Typography variant="subtitle1" className=" text-center ">
-              UI/UX Implementation
-            </Typography>
-            <Typography className="text-justify" variant="body1">
-              Bringing designs to life with a strong attention to detail,
-              focusing on creating intuitive and accessible user interfaces.
-            </Typography>
-          </Box>
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1">
             <Typography variant="subtitle1" className=" text-center ">
               Responsive Design
             </Typography>
             <Typography className="text-justify" variant="body1">
               Building websites that provide a seamless experience across all
               devices, from desktop to mobile.
+            </Typography>
+          </Box>
+          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1  max-md:col-span-2">
+            <Typography variant="subtitle1" className=" text-center ">
+              UI/UX Implementation
+            </Typography>
+            <Typography className="text-justify" variant="body1">
+              Bringing designs to life with a strong attention to detail,
+              focusing on creating intuitive and accessible user interfaces.
             </Typography>
           </Box>
         </Box>
