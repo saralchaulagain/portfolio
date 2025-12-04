@@ -26,7 +26,7 @@ const About = () => {
           </Box>
         </Box>
         <Box className="grid grid-cols-3 mt-6 gap-2 card-text max-md:grid-cols-2 max-md:mt-1 ">
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1 ">
+          <Box className="border bg-[#ffffff] py-1 px-2  flex flex-col justify-center gap-4 rounded-2xl card-hover  max-md:gap-1 ">
             <Typography variant="subtitle1" className=" text-center ">
               Clean Code
             </Typography>
@@ -36,7 +36,7 @@ const About = () => {
             </Typography>
           </Box>
 
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1">
+          <Box className="border bg-[#ffffff] py-1 px-2 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:gap-1">
             <Typography variant="subtitle1" className=" text-center ">
               Responsive Design
             </Typography>
@@ -45,7 +45,7 @@ const About = () => {
               devices, from desktop to mobile.
             </Typography>
           </Box>
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:h-fit max-md:gap-1  max-md:col-span-2">
+          <Box className="border bg-[#ffffff] py-1 px-2  flex flex-col justify-center gap-4 rounded-2xl card-hover max-md:gap-1  max-md:col-span-2">
             <Typography variant="subtitle1" className=" text-center ">
               UI/UX Implementation
             </Typography>
