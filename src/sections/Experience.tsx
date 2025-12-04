@@ -3,15 +3,15 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <Box className="about h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent bg-about">
-      <Box className="w-2/3 max-md:w-full">
-        <Box>
-          <Typography className="headers text-center" variant="h4">
+    <Box className=" h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent bg-about max-md:px-4">
+      <Box className=" w-full ">
+        <Box className="w-full">
+          <Typography className="headers text-center w-full" variant="h4">
             My Experience
           </Typography>
         </Box>
         <Box className="grid grid-cols-1 gap-2 mt-6 experience-card">
-          <Box className="flex justify-between items-center px-1 py-2 rounded-md card-hover bg-[#ffffff]">
+          <Box className="flex justify-between items-center px-2 py-2 rounded-md card-hover bg-[#ffffff]">
             <Box className="flex ">
               <Typography variant="subtitle1" className="font-bold">
                 2025-July &mdash; current

@@ -65,6 +65,11 @@ body {
 @media (max-width: 48rem) {
   html {
     width: min-content;
-    margin-left: 7rem;
+    margin-left: 6rem;
+  }
+}
+@media (min-width: 48rem) {
+  html {
+    padding: 0 140px;
   }
 }

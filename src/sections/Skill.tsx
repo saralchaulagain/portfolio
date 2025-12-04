@@ -5,8 +5,8 @@ import React from "react";
 
 const Skill = () => {
   return (
-    <Box className=" h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent">
-      <Box className="w-2/3 max-md:w-full">
+    <Box className=" h-screen w-full flex justify-center items-center gap-3 pt-2 bg-transparent max-md:px-4">
+      <Box className="max-md:w-full">
         <Box className="w-full flex flex-col items-center justify-center">
           <Typography className="headers " variant="h4">
             Skills
@@ -23,16 +23,16 @@ const Skill = () => {
             <Typography variant="subtitle1" className=" text-center ">
               Core Frontend Skills
             </Typography>
-            <Box className="grid grid-cols-2 gap-4 px-2">
+            <Box className="grid grid-cols-2 gap-1 ">
               <Box className="flex gap-1 items-center">
                 <Image src="/html.png" alt="html icon" width={32} height={32} />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   HTML
                 </Typography>
               </Box>
               <Box className="flex gap-1 items-center">
                 <Image src="/css.png" alt="css icon" width={32} height={32} />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   CSS
                 </Typography>
               </Box>
@@ -43,7 +43,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Javascript
                 </Typography>
               </Box>
@@ -54,7 +54,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Typescript
                 </Typography>
               </Box>
@@ -64,7 +64,7 @@ const Skill = () => {
             <Typography variant="subtitle1" className=" text-center ">
               Frameworks & Libraries
             </Typography>
-            <Box className="grid grid-cols-2 gap-4 px-2">
+            <Box className="grid grid-cols-2 gap-1 ">
               <Box className="flex gap-1 items-center">
                 <Image
                   src="/react.png"
@@ -72,7 +72,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   React
                 </Typography>
               </Box>
@@ -83,7 +83,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Next.js
                 </Typography>
               </Box>
@@ -94,20 +94,20 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Tailwind CSS
                 </Typography>
               </Box>
             </Box>
           </Box>
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover">
+          <Box className="border bg-[#ffffff] py-1 px-2 flex flex-col justify-center gap-4 rounded-2xl card-hover">
             <Typography variant="subtitle1" className=" text-center ">
               Tools & Version Control
             </Typography>
-            <Box className="grid grid-cols-2 gap-4 px-2">
+            <Box className="grid grid-cols-2 gap-1 ">
               <Box className="flex gap-1 items-center">
                 <Image src="/git.png" alt="git icon" width={32} height={32} />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Git
                 </Typography>
               </Box>
@@ -118,7 +118,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Github
                 </Typography>
               </Box>
@@ -129,7 +129,7 @@ const Skill = () => {
                   width={32}
                   height={32}
                 />
-                <Typography className="text-justify" variant="body1">
+                <Typography className="text-justify" variant="body2">
                   Vs Code
                 </Typography>
               </Box>
@@ -141,7 +141,7 @@ const Skill = () => {
             Current Focus
           </Typography>
           <Typography
-            variant="subtitle1"
+            variant="body1"
             className="text-justify text-[var(--text-color)]"
           >
             I am currently learning GSAP for creating smooth and engaging
@@ -150,38 +150,45 @@ const Skill = () => {
             validation and performance.
           </Typography>
 
-          <Box className="border bg-[#ffffff] py-1 px-2 h-50 flex flex-col justify-center gap-4 rounded-2xl card-hover w-1/2 ">
-            <Box className="grid grid-cols-1 gap-4 px-2">
+          <Box className="border bg-[#ffffff] py-1 px-2 flex flex-col justify-center gap-4 rounded-2xl card-hover w-1/2 max-md:w-full">
+            <Box className="grid grid-cols-1  ">
               <Typography variant="subtitle1" className=" text-justify ">
                 Learning
               </Typography>
-              <Box className="flex gap-1 items-center">
-                <Image src="/gsap.png" alt="gsap icon" width={32} height={32} />
-                <Typography className="text-justify" variant="body1">
-                  GSAP
-                </Typography>
-              </Box>
-              <Box className="flex gap-1 items-center">
-                <Image
-                  src="/react-form-hook.png"
-                  alt="react-form-hook icon"
-                  width={32}
-                  height={32}
-                />
-                <Typography className="text-justify" variant="body1">
-                  React Form Hook
-                </Typography>
-              </Box>
-              <Box className="flex gap-1 items-center">
-                <Image
-                  src="/react-table.png"
-                  alt="react-table icon"
-                  width={32}
-                  height={32}
-                />
-                <Typography className="text-justify" variant="body1">
-                  React Table
-                </Typography>
+              <Box className="max-md:grid max-md:grid-cols-[1fr_auto_1fr]  gap-2 px-2">
+                <Box className="flex gap-1 max-md:justify-center items-center">
+                  <Image
+                    src="/gsap.png"
+                    alt="gsap icon"
+                    width={32}
+                    height={32}
+                  />
+                  <Typography className="text-justify" variant="body2">
+                    GSAP
+                  </Typography>
+                </Box>
+                <Box className="flex gap-1 max-md:justify-center items-center ">
+                  <Image
+                    src="/react-form-hook.png"
+                    alt="react-form-hook icon"
+                    width={32}
+                    height={32}
+                  />
+                  <Typography className="text-justify" variant="body2">
+                    React Form Hook
+                  </Typography>
+                </Box>
+                <Box className="flex gap-1 max-md:justify-center items-center ">
+                  <Image
+                    src="/react-table.png"
+                    alt="react-table icon"
+                    width={32}
+                    height={32}
+                  />
+                  <Typography className="text-justify" variant="body2">
+                    React Table
+                  </Typography>
+                </Box>
               </Box>
             </Box>
           </Box>
