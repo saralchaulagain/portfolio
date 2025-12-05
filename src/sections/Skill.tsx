@@ -185,6 +185,7 @@ const Skill = () => {
                     width={32}
                     height={32}
                   />
+                  {/* text  */}
                   <Typography className="text-justify" variant="body2">
                     React Table
                   </Typography>
