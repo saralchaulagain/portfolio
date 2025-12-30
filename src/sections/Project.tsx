@@ -47,8 +47,8 @@ const Project = () => {
             </Typography>
             <Box className="flex items-center gap-2">
               <Image
-                src="/time-management.png"
-                alt="time management icon"
+                src="/MyNote.png"
+                alt="MyNote icon"
                 width={60}
                 height={60}
               />
