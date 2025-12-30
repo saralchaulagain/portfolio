@@ -43,6 +43,30 @@ const Project = () => {
               variant="subtitle1"
               className=" text-center  min-h-[60px]"
             >
+              MyNotes
+            </Typography>
+            <Box className="flex items-center gap-2">
+              <Image
+                src="/time-management.png"
+                alt="time management icon"
+                width={60}
+                height={60}
+              />
+              <Box className="flex flex-col gap-2 ">
+                <Typography variant="body2">
+                  My Notes is a privacy-focused full-stack note-taking app where
+                  authenticated users can securely create, edit, sort, and
+                  delete personal notes using a clean, responsive interface with
+                  rich-text editing.
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
+          <Box className="border bg-[#ffffff] py-1 px-2   gap-4 rounded-2xl card-hover ">
+            <Typography
+              variant="subtitle1"
+              className=" text-center  min-h-[60px]"
+            >
               Event Management System (Internship Project)
             </Typography>
             <Box className="flex items-center gap-2">
